@@ -47,7 +47,7 @@ namespace Mission.Interview.Test
               new[] {0, 0, 1, 0, 0},
               new[] {0, 0, 0, 1, 1}
             };
-            //Answer: 1
+            //Answer: 3
 
             int expected = 3;
 
@@ -61,8 +61,8 @@ namespace Mission.Interview.Test
         public void gotcha_1()
         {
             var i = CreateIslands();
-
-            // Example 1:
+         
+            // how about a U-shaped island?
             var ocean = new[] {
 
               new[] {1, 1, 0, 0, 0},
@@ -70,8 +70,7 @@ namespace Mission.Interview.Test
               new[] {0, 0, 1, 0, 1},
               new[] {0, 0, 1, 1, 1}
             };
-            //Answer: 1
-
+            
             int expected = 2;
 
             int c = i.GetIslandsCount(ocean);
